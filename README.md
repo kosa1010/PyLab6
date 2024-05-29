@@ -193,33 +193,11 @@ Inne warianty wykresów 3D: https://matplotlib.org/stable/gallery/lines_bars_and
 1. Wypróbuj kod z listingów znajdujących się w instrukcji i sprawdź ich działanie.
 1. Utwórz wykres słupkowy przedstawiający temperatury w poszczególnych dniach jakie wystąpiły w ciągu wybranego tygodnia.
 Temperatury możesz odczytywać z listy/tablicy.
-1. W jednym obszarze kreślenia umieść 2 wykresy przedstawiające kursy wybranych przez siebie dwóch walut dodaj legendę
-Do pobrania wartości kuru z przedziału dat skorzystaj np. z API https://exchangerate.host/#/
-###### Przykład pobiera słownik zawierający kurs EURO w ostatnich dwóch tygodniach
-```python
-import requests
-import datatime
 
-date_to = datetime.date.today()
-date_from = date_to - datetime.timedelta(days=14)
-base = "EUR"
-url = 'https://api.exchangerate.host/timeseries?start_date=' + str(date_from) +
-'&end_date=' + str(
- date_to) + '&base=' + base
-response = requests.get(url)
-data = response.json()
-
-print(data["base"])
-for key, value in data.items():
-    if key == "rates":
-        for k, v in value.items():
-            print(k, v["PLN"])
-```
-
-4. Narysuj wykres funkcji `y = x^2` dla `x` z zakresu od `-5` do `5`.
-5. Narysuj wykres funkcji `sin(x)` i `cos(x)` dla `x` z zakresu od `0` do `2π`.
-6. Narysuj wykres 3D powierzchni `z=x^2+y^2` dla `x` z zakresu od `-2` do `2` i `y` z zakresu od `-2` do `2`.
-7. Narysuj wykres słupkowy przedstawiający liczbę urodzonych dzieci według płci w danym roku.
+3. Narysuj wykres funkcji `y = x^2` dla `x` z zakresu od `-5` do `5`.
+4. Narysuj wykres funkcji `sin(x)` i `cos(x)` dla `x` z zakresu od `0` do `2π`.
+5. Narysuj wykres 3D powierzchni `z=x^2+y^2` dla `x` z zakresu od `-2` do `2` i `y` z zakresu od `-2` do `2`.
+6. Narysuj wykres słupkowy przedstawiający liczbę urodzonych dzieci według płci w danym roku.
 Przyjmij, że dane na temat urodzeń to lista krotek np.
 `dane = [(100, 90), (110, 95), (120, 105), (130, 110)]`
 Dla podanej listy wykres może wyglądać następująco:
@@ -227,18 +205,18 @@ Dla podanej listy wykres może wyglądać następująco:
 ![image](https://github.com/kosa1010/PyLab6/assets/12736759/885258bd-8b50-4af2-b7f8-58c9cb60830f)
 
 
-9. Narysuj wykres punktowy przedstawiający zależność masy ciała od wzrostu dla grupy osób.
-10. Narysuj wykres kołowy przedstawiający rozkład procentowy różnych gatunków owoców w koszu.
+7. Narysuj wykres punktowy przedstawiający zależność masy ciała od wzrostu dla grupy osób.
+8. Narysuj wykres kołowy przedstawiający rozkład procentowy różnych gatunków owoców w koszu.
 Przyjmij, że dane na temat owoców to lista krotek np.
 `data = [('jabłka', 30), ('gruszki', 20), ('śliwki', 15), ('banany', 25), ('cytryny', 10)]`
-11. Narysuj histogram rozkładu wyników testu u studentów.
+9. Narysuj histogram rozkładu wyników testu u studentów.
 Przyjmij, że dane odnośnie do wyników to lista przechowująca procent uzyskanych punktów przez studentów np.
 `dane = [60, 70, 80, 90, 100, 70, 80, 80, 85, 95]`
 Dla podanej listy histogram będzie wyglądał następująco:
 
 ![image](https://github.com/kosa1010/PyLab6/assets/12736759/0e6dd54b-def2-4c1b-ae90-aea5b42b91c6)
 
-13. Używając funkcji `sine(x)` narysuj wykres liniowy, powinien on wyglądać jak na prezentowanym rysunku:
+10. Używając funkcji `sine(x)` narysuj wykres liniowy, powinien on wyglądać jak na prezentowanym rysunku:
     
 ![image](https://github.com/kosa1010/PyLab6/assets/12736759/bf64c857-9680-4fa2-8b87-f1d94ab18c6f)
 
@@ -248,7 +226,7 @@ def sine(x):
     return np.power(x, (2.0 / 3)) + 0.9 * (3.3 - x ** 2) ** (1 / 2) * np.sin(10 * np.pi * x)
 ```
 Następnie dodaj do wykresu odbicie lustrzane narysowanej funkcji, aby utworzyć pełne serduszko.
-12. Poniższy kod wyświetla mapę temperatur dla 5 europejskich miast, temperatury pobierane są z API przeanalizuj kod
+11. Poniższy kod wyświetla mapę temperatur dla 5 europejskich miast, temperatury pobierane są z API przeanalizuj kod
 i zmodyfikuj go tak aby wynik był wzbogacony o co najmniej jedno miasto więcej.
 ```python
 import matplotlib.pyplot as plt
