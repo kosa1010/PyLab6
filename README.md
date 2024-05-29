@@ -16,7 +16,7 @@ plt.ylabel('etykieta osi Y')
 plt.xlabel('etykieta osi X')
 plt.show()
 ```
-![img.png](img.png)
+![image](https://github.com/kosa1010/PyLab6/assets/12736759/b9eed2f8-6cf4-46f6-b5b3-65b1a6cfea15)
 
 ### Dlaczego oś x ma zakres od 0-3, a oś y od 1-4?
 Jeśli podasz pojedynczą listę lub tablicę do wykreślenia, matplotlib zakłada, że jest to sekwencja wartości `y` i automatycznie generuje
@@ -56,7 +56,8 @@ t = np.arange(0., 5., 0.2)
 plt.plot(t, t, 'r--', t, t**2, 'bs', t,t**3,'g^')
 plt.show()
 ```
-![img_1.png](img_1.png)
+![image](https://github.com/kosa1010/PyLab6/assets/12736759/5a2f24d1-692a-4888-8ad7-64b34606a4ba)
+
 
 Rysowanie kilku wykresów w jednym obszarze roboczym może odbywać się przez
 - wielokrotne użycie funkcji `plot`
@@ -116,7 +117,8 @@ plt.subplot(212)
 plt.plot(t2, np.cos(2*np.pi*t2), 'r--')
 plt.show()
 ```
-![img_2.png](img_2.png)
+![image](https://github.com/kosa1010/PyLab6/assets/12736759/322f3eda-d287-4ef9-b35e-860effb9f875)
+
 Wywołanie funkcji `figure` jest opcjonalne, ponieważ figura zostanie utworzona, jeśli nie istnieje, tak samo jak oś zostanie utworzona
 (odpowiednik jawnego wywołania `subplot()`), jeśli nie istnieje. Wywołanie `subplot` określa `numrows, numcols, plot_number,` gdzie
 `plot_number` mieści się w zakresie od `1` do `numrows*numcols`. Przecinki w wywołaniu `subplot` są opcjonalne, jeśli
@@ -221,7 +223,8 @@ for key, value in data.items():
 Przyjmij, że dane na temat urodzeń to lista krotek np.
 `dane = [(100, 90), (110, 95), (120, 105), (130, 110)]`
 Dla podanej listy wykres może wyglądać następująco:
-![img_4.png](img_4.png)
+![image](https://github.com/kosa1010/PyLab6/assets/12736759/885258bd-8b50-4af2-b7f8-58c9cb60830f)
+
 
 8. Narysuj wykres punktowy przedstawiający zależność masy ciała od wzrostu dla grupy osób.
 9. Narysuj wykres kołowy przedstawiający rozkład procentowy różnych gatunków owoców w koszu.
@@ -231,9 +234,11 @@ Przyjmij, że dane na temat owoców to lista krotek np.
 Przyjmij, że dane odnośnie do wyników to lista przechowująca procent uzyskanych punktów przez studentów np.
 `dane = [60, 70, 80, 90, 100, 70, 80, 80, 85, 95]`
 Dla podanej listy histogram będzie wyglądał następująco:
-![img_5.png](img_5.png)
+![image](https://github.com/kosa1010/PyLab6/assets/12736759/0e6dd54b-def2-4c1b-ae90-aea5b42b91c6)
+
 11. Używając funkcji `sine(x)` narysuj wykres liniowy, powinien on wyglądać jak na prezentowanym rysunku:
-![img_6.png](img_6.png)
+![image](https://github.com/kosa1010/PyLab6/assets/12736759/bf64c857-9680-4fa2-8b87-f1d94ab18c6f)
+
 Funkcja `sine(x)`
 ```python
 def sine(x):
@@ -289,10 +294,4 @@ ax.set_yticklabels(towns)
 # Pokaż wykres
 plt.show()
 ```
-
-
-
-
-
-
-![img_3.png](img_3.png)
+![image](https://github.com/kosa1010/PyLab6/assets/12736759/9b88d98b-12f4-4ffa-9101-aeba3bf3e8c5)
