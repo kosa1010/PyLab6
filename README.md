@@ -223,20 +223,23 @@ for key, value in data.items():
 Przyjmij, że dane na temat urodzeń to lista krotek np.
 `dane = [(100, 90), (110, 95), (120, 105), (130, 110)]`
 Dla podanej listy wykres może wyglądać następująco:
+
 ![image](https://github.com/kosa1010/PyLab6/assets/12736759/885258bd-8b50-4af2-b7f8-58c9cb60830f)
 
 
-8. Narysuj wykres punktowy przedstawiający zależność masy ciała od wzrostu dla grupy osób.
-9. Narysuj wykres kołowy przedstawiający rozkład procentowy różnych gatunków owoców w koszu.
+9. Narysuj wykres punktowy przedstawiający zależność masy ciała od wzrostu dla grupy osób.
+10. Narysuj wykres kołowy przedstawiający rozkład procentowy różnych gatunków owoców w koszu.
 Przyjmij, że dane na temat owoców to lista krotek np.
 `data = [('jabłka', 30), ('gruszki', 20), ('śliwki', 15), ('banany', 25), ('cytryny', 10)]`
-10. Narysuj histogram rozkładu wyników testu u studentów.
+11. Narysuj histogram rozkładu wyników testu u studentów.
 Przyjmij, że dane odnośnie do wyników to lista przechowująca procent uzyskanych punktów przez studentów np.
 `dane = [60, 70, 80, 90, 100, 70, 80, 80, 85, 95]`
 Dla podanej listy histogram będzie wyglądał następująco:
+
 ![image](https://github.com/kosa1010/PyLab6/assets/12736759/0e6dd54b-def2-4c1b-ae90-aea5b42b91c6)
 
-11. Używając funkcji `sine(x)` narysuj wykres liniowy, powinien on wyglądać jak na prezentowanym rysunku:
+13. Używając funkcji `sine(x)` narysuj wykres liniowy, powinien on wyglądać jak na prezentowanym rysunku:
+    
 ![image](https://github.com/kosa1010/PyLab6/assets/12736759/bf64c857-9680-4fa2-8b87-f1d94ab18c6f)
 
 Funkcja `sine(x)`
